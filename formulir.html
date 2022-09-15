@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	<title>
+		Formulir Pendaftaran Pasien Baru
+	</title>
+
+	<style>
+
+		/* Styling the Body element i.e. Color,
+		Font, Alignment */
+		body {
+			background-color: #FFFAEF;
+			font-family: Verdana;
+			text-align: center;
+		}
+
+		/* Styling the Form (Color, Padding, Shadow) */
+		form {
+			background-color: #fff;
+			max-width: 500px;
+			margin: 50px auto;
+			padding: 30px 20px;
+			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+		}
+
+		/* Styling form-control Class */
+		.form-control {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+
+		/* Styling form-control Label */
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		/* Styling form-control input,
+		select, textarea */
+		.form-control input,
+		.form-control select,
+		.form-control textarea {
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			padding: 10px;
+			display: block;
+			width: 95%;
+		}
+
+		/* Styling form-control Radio
+		button and Checkbox */
+		.form-control input[type="radio"],
+		.form-control input[type="checkbox"] {
+			display: inline-block;
+			width: auto;
+		}
+
+		/* Styling Button */
+		button {
+			background-color: #EBD7C1;
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			font-size: 21px;
+			display: block;
+			width: 100%;
+			margin-top: 50px;
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+
+<div class="container">
+	<div class="header-center">
+		<a href="#"><img src="assets/logors.png"></a>
+	</div>
+
+<body>
+	<h1>Formulir Pendaftaran Pasien Baru</h1>
+	<h2> RS SEHAT SEJAHTERA </h2>
+	<p> Mohon data diisi dengan teliti dan benar! </p>
+
+	<!-- Create Form -->
+	<form id="form">
+
+		<!-- Details -->
+		<div class="form-control">
+			<label for="namepasien" id="label-namepasien">
+				Nama Lengkap Pasien
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="namepasien"
+				placeholder="Masukkan Nama Lengkap Pasien" />
+		</div>
+
+        <!-- Details -->
+		<div class="form-control">
+			<label for="tempat" id="label-tempat">
+				Tempat Lahir
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="name"
+				placeholder="Masukkan Tempat Lahir Anda" />
+		</div>
+
+        <div class="form-control">
+			<label for="tl" id="label-tl">
+				Tanggal Lahir
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="date"
+				id="tl"
+				placeholder="Masukkan Tanggal Lahir Anda" />
+		</div>
+
+		<div class="form-control">
+			<label for="umur" id="label-umur">
+				Umur
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="umur"
+				placeholder="Masukkan Umur Andas" />
+		</div>
+
+        <div class="form-control">
+			<label>
+				Jenis Kelamin
+			</label>
+
+			<!-- Input Type Radio Button -->
+			<label for="recommed-1">
+				<input type="radio"
+					id="recommed-1"
+					name="recommed">Laki-laki</input>
+			</label>
+			<label for="recommed-2">
+				<input type="radio"
+					id="recommed-2"
+					name="recommed">Perempuan</input>
+			</label>
+        </div>
+
+        <div class="form-control">
+			<label>
+				Agama
+			</label>
+
+			<!-- Input Type Radio Button -->
+			<label for="recommed-1">
+				<input type="radio"
+					id="recommed-1"
+					name="recommed">Islam</input>
+			</label>
+			<label for="recommed-2">
+				<input type="radio"
+					id="recommed-2"
+					name="recommed">Katolik</input>
+			</label>
+            <label for="recommed-3">
+				<input type="radio"
+					id="recommed-3"
+					name="recommed">Kristen</input>
+			</label>
+            <label for="recommed-4">
+				<input type="radio"
+					id="recommed-4"
+					name="recommed">Hindu</input>
+			</label>
+            <label for="recommed-5">
+				<input type="radio"
+					id="recommed-5"
+					name="recommed">Budha</input>
+			</label>
+            <label for="recommed-6">
+				<input type="radio"
+					id="recommed-6"
+					name="recommed">Konghucu</input>
+			</label>
+        </div>
+        
+        <div class="form-control">
+			<label for="alamat" id="label-alamat">
+				Alamat Lengkap
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="alamat"
+				placeholder="Masukkan Alamat Lengkap Anda" />
+		</div>
+
+        <div class="form-control">
+			<label>
+				Status Perkawinan
+			</label>
+
+			<!-- Input Type Radio Button -->
+			<label for="recommed-1">
+				<input type="radio"
+					id="recommed-1"
+					name="recommed">Belum Kawin</input>
+			</label>
+			<label for="recommed-2">
+				<input type="radio"
+					id="recommed-2"
+					name="recommed">Sudah kawin</input>
+			</label>
+        </div>
+
+        <div class="form-control">
+			<label>
+				Pendidikan Terakhir
+			</label>
+
+			<!-- Input Type Radio Button -->
+			<label for="recommed-1">
+				<input type="radio"
+					id="recommed-1"
+					name="recommed">SD</input>
+			</label>
+			<label for="recommed-2">
+				<input type="radio"
+					id="recommed-2"
+					name="recommed">SMP/Sederajat</input>
+			</label>
+            <label for="recommed-3">
+				<input type="radio"
+					id="recommed-3"
+					name="recommed">SMA/Sederajat</input>
+			</label>
+            <label for="recommed-4">
+				<input type="radio"
+					id="recommed-4"
+					name="recommed">Diploma/Sarjana</input>
+			</label>
+            <label for="recommed-5">
+				<input type="radio"
+					id="recommed-5"
+					name="recommed">Lainnya</input>
+			</label>
+        </div>
+
+		<div class="form-control">
+			<label for="email" id="label-email">
+				Email
+			</label>
+
+			<!-- Input Type Email-->
+			<input type="email"
+				id="email"
+				placeholder="Enter your email" />
+		</div>
+
+		<div class="form-control">
+			<label for="pekerjaan" id="label-pekerjaan">
+				Pekerjaan
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="pekerjaan"
+				placeholder="Masukkan Pekerjaan Anda" />
+		</div>
+
+		<div class="form-control">
+			<label>
+				Kewarganegaraan
+			</label>
+
+			<!-- Input Type Radio Button -->
+			<label for="recommed-1">
+				<input type="radio"
+					id="recommed-1"
+					name="recommed">WNI</input>
+			</label>
+			<label for="recommed-2">
+				<input type="radio"
+					id="recommed-2"
+					name="recommed">WNA</input>
+			</label>
+		</div>
+
+		<div class="form-control">
+			<label>
+				cara Pembayaran
+			</label>
+
+			<!-- Input Type Radio Button -->
+			<label for="recommed-1">
+				<input type="radio"
+					id="recommed-1"
+					name="recommed">Asuransi/Jaminan Kesehatan</input>
+			</label>
+			<label for="recommed-2">
+				<input type="radio"
+					id="recommed-2"
+					name="recommed">Umum/Mandiri</input>
+			</label>
+		</div>
+
+		<div class="form-control">
+			<label for="namepenanggung" id="label-namepenanggung">
+				Nama Lengkap Penanggung Jawab
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="namepenanggung"
+				placeholder="Masukkan Nama Lengkap Penanggung Jawab" />
+		</div>
+
+		<div class="form-control">
+			<label for="no" id="label-no">
+				No Telpon
+			</label>
+
+			<!-- Input Type Email-->
+			<input type="no"
+				id="no"
+				placeholder="Masukkan No Telpon Anda" />
+		</div>
+
+		<div class="form-control">
+			<label>Klinik yang akan dituju
+				<small>(Check all that apply)</small>
+			</label>
+			<!-- Input Type Checkbox -->
+			<label for="inp-1">
+				<input type="checkbox"
+					name="inp">Anak</input></label>
+			<label for="inp-2">
+				<input type="checkbox"
+					name="inp">Obgyn</input></label>
+			<label for="inp-3">
+				<input type="checkbox"
+					name="inp">Penyakit Dalam</input></label>
+			<label for="inp-4">
+				<input type="checkbox"
+					name="inp">Syaraf</input></label>
+			<label for="inp-5">
+				<input type="checkbox"
+					name="inp">Mata</input></label>
+			<label for="inp-6">
+				<input type="checkbox"
+					name="inp">Kulit dan Kelamin</input></label>
+			<label for="inp-7">
+				<input type="checkbox"
+					name="inp">Bedah Umum</input></label>
+			<label for="inp-7">
+				<input type="checkbox"
+					name="inp">Bedah Orthopedi</input></label>
+			<label for="inp-7">
+				<input type="checkbox"
+					name="inp">Gigi dan Mulut</input></label>
+			<label for="inp-7">
+				<input type="checkbox"
+					name="inp">THT</input></label>
+			<label for="inp-7">
+				<input type="checkbox"
+					name="inp">Jiwa</input></label>
+			<label for="inp-7">
+				<input type="checkbox"
+					name="inp">Umum</input></label>
+			<label for="inp-7">
+				<input type="checkbox"
+					name="inp">Lain-lain</input></label>
+		</div>
+
+		<div class="form-control">
+			<label for="comment">
+				Riwayat atau Keluhan Penyakit
+			</label>
+
+			<!-- multi-line text input control -->
+			<textarea name="comment" id="comment"
+				placeholder="Enter your comment here">
+			</textarea>
+		</div>
+
+		<!-- Multi-line Text Input Control -->
+		<button type="submit" value="submit">
+			Submit
+		</button>
+	</form>
+</body>
+	</div>
+	<p>©2022 All Right Reserved - By Theresia Nawangsih</p>
+	</div>
+
+</html>
